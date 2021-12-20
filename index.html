@@ -3,42 +3,68 @@
   <head>
         <meta charset="utf-8"/>
         <title>YaSale Товары для дома</title>
-        <meta
-        name="viewport" content="width=device-width, initial-scale=1"/>
-        <!-- Latest compiled and minified CSS -->
-        <link
-        rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-        <!-- Optional theme -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+        <!-- Latest compiled and minified CSS
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        Optional theme
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"/> -->
         <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
   </head>
   <body>
       <!-- Верхний хэдэр -->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-expand-md navbar-light" role="navigation">
       <div class="container">
                 <!-- Всплывающее меню локации -->
-                <div class="col-md-2 dropdown" style="padding-top: 10px;">
-                    <button class="btn btn-default btn-md dropdown-toggle" data-toggle="dropdown" style="border: none; outline: none; background: transparent">Казань<span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Краснодар</a></li>
-                        <li><a href="#">Москва</a></li>
-                        <li><a href="#">Санкт-Петербург</a></li>
-                        <li><a href="#">Волгоград</a></li>
-                    </ul>
+                <div class="col-md-2 dropdown">
+                    <button class="btn btn-light btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: none; outline: none; background: transparent">Казань</button>
+                    <div class="dropdown-menu" aria-labelledby ="dropdownMenuButton">
+                        <a class="dropdown-item"href="#">Краснодар</a>
+                        <a class="dropdown-item"href="#">Москва</a>
+                        <a class="dropdown-item"href="#">Санкт-Петербург</a>
+                        <a class="dropdown-item"href="#">Волгоград</a>
+                    </div>
                 </div>
                 <!-- Режим работы -->
                 <div class="col-md-4" style="padding-top: 15px;">
                     <p>Ежедневно, круглосуточно</p>
                 </div>
                 <!-- Основное меню с пунктами -->
-                <ul class="nav navbar-nav navbar-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto navbar-right">
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">О сервисе</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Доставка</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Оплата</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Возврат</a>
+                       </li>
+                       <li class="nav-item">
+                           <a href="#" class="nav-link">Контакты</a>
+                       </li>
+                  </ul>
+              </div>
+                <!--<ul class="nav navbar-nav navbar-right">
                   <li><a href="#">О сервисе</a></li>
                   <li><a href="#">Доставка</a></li>
                   <li><a href="#">Оплата</a></li>
                   <li><a href="#">Возврат</a></li>
                   <li><a href="#">Контакты</a></li>
-                </ul>
+                </ul>-->
         </div>
     </nav>
       <!-- Нижний хэдэр -->
@@ -46,7 +72,7 @@
     <nav class="navbar navbar-default" role="navigation">
       <div class="container">
           <!-- Лого -->
-        <div class="navbar-header"><a href="#" class="navbar-brand"><img src="images/logo_nav.png"/></a></div>
+        <div class="navbar-header"><a href="#" class="navbar-brad"><img src="images/logo_nav.png"></a></div>
           <!-- адрес -->
         <div class="nav navbar-nav col-md-3">
           <p>Магазин:</p>
@@ -132,7 +158,7 @@
           class="row">
           <!-- Блок: список вариантов доставки -->
           <div class="col-md-3">
-              <ul class="list-group">
+              <ul class="list-group list-group-flush">
                   <li class="list-group-item">
                       <a href="#">Доставка по Москве</a>
                   </li>
@@ -360,6 +386,6 @@
         </div>
       </div>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   </body>
 </html>
