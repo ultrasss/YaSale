@@ -1,5 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #ccc;
   content: ">\00a0";
+}
+
+
+.navbar {
+}
+.navbar-expand-md {
+}
+.navbar-light {
+}
+.container {
+}
+
+.mycontainer-underline {
+  border-bottom: 1px solid #e4e4e4;
+}
+.col-md-2 {
+}
+.dropdown {
+}
+.btn {
+}
+.btn-light {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline dashed;
+  }
+.btn-md {
+}
+.dropdown-toggle {
+}
+.dropdown-menu {
+}
+.dropdown-item {
+}
+.col-md-4 p{
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #949494;
+}
+.navbar-toggler {
+}
+.navbar-toggler-icon {
+}
+.collapse {
+}
+.navbar-collapse {
+}
+.navbar-nav {
+}
+.ml-auto {
+}
+.navbar-right {
+}
+.nav-item {
+  
+}
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  
+}
+.navbar-default {
+}
+.navbar-header {
+}
+.navbar-brad {
+}
+.nav {
+}
+.col-md-3 {
+}
+.btn-default {
+}
+.btn-sm {
+}
+.caret {
+}
+.btn-success {
+}
+.glyphicon {
+}
+.glyphicon-align-left {
+}
+.col-md-7 {
+}
+.form-inline {
+}
+.form-control {
+}
+.glyphicon-search {
+}
+.col-md-1 {
+}
+.glyphicon-heart-empty {
+}
+.bi {
+}
+.bi-cart3 {
+}
+.breadcrumb {
+}
+.breadcrumb-item {
+}
+.active {
+}
+.row {
+}
+.list-group {
+}
+.list-group-flush {
+}
+.list-group-item {
+}
+.col-md-9 {
+}
+.col-md-8 {
+}
+.table {
+}
+.table-striped {
+}
+.col-md-6 {
+}
+.img-responsive {
+}
+.form-horizontal {
+}
+.form-group {
+}
+.form-group-md {
+}
+.col-sm-3 {
+}
+.control-label {
+}
+.col-sm-9 {
+}
+.input-lg {
+}
+.col-md-12 {
+}
+.bi-geo-alt {
+}
+.bi-clock {
+}
+.bi-telephone {
+}
+.footer {
+}
+.navbar-brand {
+}
+.bi-telegram {
+}
+.bi-twitter {
+}
+.bi-facebook {
+}
+.bi-instagram {
 }
